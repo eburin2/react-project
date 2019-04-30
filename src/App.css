@@ -12,18 +12,14 @@
   overflow-wrap: break-word;
 }
 
-/* .description {
-  padding-right: 800px;
-  padding-left: 200px;
-} */
-
 .flex-container {
-  padding-left: 10px;
   display: inline-block;
 }
 
 img {
   padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 4px;
 }
 
 
@@ -58,4 +54,5 @@ img {
     padding-left: 155px;
 
   }
+
 }
