@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from './Card/Card';
 
-function getRandom(arr, n) {
+const getRandom = (arr, n) => {
     var result = new Array(n),
         len = arr.length,
         taken = new Array(len);
@@ -72,20 +72,11 @@ class App extends Component {
                               product={card.productUrl}
                               key={card.id}
                           />
-
                   );
               })
           );
       }
   }
 
-
-//     return (
-//       <div className="App">
-//         {cards}
-//       </div>
-//     );
-//   }
-// }
 
 export default App;
