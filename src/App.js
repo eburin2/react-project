@@ -3,7 +3,7 @@ import './App.css';
 import Card from './Card/Card';
 
 const getRandom = (arr, n) => {
-    var result = new Array(n),
+    let result = new Array(n),
         len = arr.length,
         taken = new Array(len);
     if (n > len)
@@ -65,14 +65,15 @@ class App extends Component {
               cards.map((card, index) => {
                   return (
 
-                          <Card
-                              image={card.img}
-                              title={card.title}
-                              description={card.description}
-                              product={card.productUrl}
-                              key={card.id}
-                          />
-                  );
+                            <Card
+                                image={card.img}
+                                title={card.title}
+                                description={card.description}
+                                product={card.productUrl}
+                                key={card.id}
+                            />
+                          
+                );
               })
           );
       }
